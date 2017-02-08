@@ -15,6 +15,9 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/article-one', function(req,res){
  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
+app.get('/website', function(req,res){
+ res.sendFile(path.join(__dirname, 'ui', 'website.html'));
+});
 app.get('/Calculator', function(req,res){
  res.sendFile(path.join(__dirname, 'ui', 'Calculator.html'));
 });
